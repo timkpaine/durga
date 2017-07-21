@@ -15,6 +15,9 @@ clean: ## clean the repository
 	find -name "*.pyc" | xargs rm -rf 
 	rm -rf .coverage cover htmlcov logs
 
+example: ## run simple example
+	python3 durga/example.py
+
 # Thanks to Francoise at marmelab.com for this
 .DEFAULT_GOAL := help
 help:
