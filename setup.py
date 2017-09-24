@@ -48,9 +48,10 @@ setup(
 
     # data_files=[('my_data', ['data/data_file'])],
 
-    # entry_points={
-    #     'console_scripts': [
-    #         'sample=sample:main',
-    #     ],
-    # },
+    entry_points={
+        'console_scripts': [
+            'peer=durga.peer:main',
+            'tracker=durga.tracker:main',
+        ],
+    },
 )
