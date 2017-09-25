@@ -14,6 +14,6 @@ python3 -m durga.tracker
 
 ## Peer
 ```python
-python3 -m durga.tracker
+python3 -m durga.peer
 ```
 
