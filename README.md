@@ -5,3 +5,15 @@
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/durga-proj/Lobby)
 [![Waffle.io](https://badge.waffle.io/timkpaine/durga.png?label=ready&title=Ready)](https://waffle.io/timkpaine/durga?utm_source=badge)
 [![Site](https://img.shields.io/badge/Site--grey.svg?colorB=FFFFFF)](http://paine.nyc/durga)
+
+
+## Tracker
+```python
+python3 -m durga.tracker
+```
+
+## Peer
+```python
+python3 -m durga.tracker
+```
+
