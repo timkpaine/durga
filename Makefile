@@ -20,6 +20,9 @@ clean: ## clean the repository
 example: ## run simple example
 	python3 durga/example.py
 
+install:  ## install to site-packages
+	python3 setup.py install
+
 # Thanks to Francoise at marmelab.com for this
 .DEFAULT_GOAL := help
 help:
