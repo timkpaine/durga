@@ -13,6 +13,7 @@ setup(
     description='Distributed Object Database',
     long_description=long_description,
     url='https://github.com/timkpaine/durga',
+    download_url='https://github.com/timkpaine/durga/archive/v0.0.4.tar.gz',
     author='Tim Paine',
     author_email='timothy.k.paine@gmail.com',
     license='LGPL',
