@@ -7,6 +7,13 @@ from .logging import LOG as log
 from .utils import parseArgs
 
 
+def _genRandom(lst, start=0, end=10000):
+    id = random.randint(start, end)
+    while id in lst:
+        id = random.randint(start, end)
+    return id
+
+
 class TrackerHandler(tornado.web.RequestHandler):
     '''Tracker Handler
     Extends:
@@ -30,10 +37,7 @@ class TrackerRegisterHandler(tornado.web.RequestHandler):
         host = self.request.host
         log.info("New request from %s", host)
 
-        id = random.randint(0, 10000)
-        while id in self._peers:
-            id = random.randint(0, 10000)
-
+        id = _genRandom(self._peers, 0, 10000)
         self._peers[id] = host
 
         log.info("Registering peer %d from %s", id, host)

@@ -12,7 +12,7 @@ class PeerApplication(tornado.web.Application):
         self._t = tracker
         resp = requests.post(self._t, {})
         self._id = resp.text
-        log.info('Regiestered with tracker %s, given id %s', self._t, self._id)
+        log.info('Registered with tracker %s, given id %s', self._t, self._id)
         super(PeerApplication, self).__init__([(r"/", PeerHandler), ], *args, **kwargs)
 
 
