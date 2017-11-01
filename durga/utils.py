@@ -1,3 +1,11 @@
+import random
+
+
+def _gen_random(lst, start=0, end=10000):
+    id = random.randint(start, end)
+    while id in lst:
+        id = random.randint(start, end)
+    return id
 
 
 def parseArgs(argv):
