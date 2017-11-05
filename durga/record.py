@@ -1,5 +1,3 @@
-import inspect
-
 
 class Record(object):
     _ins = []
