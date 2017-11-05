@@ -30,24 +30,7 @@ setup(
 
     keywords='object database',
 
-    # You can just specify the packages manually here if your project is
-    # simple. Or you can use find_packages().
     packages=find_packages(exclude=[]),
-
-    #   py_modules=["my_module"],
-
-    # install_requires=['peppercorn'],
-
-    # extras_require={
-    #     'dev': ['check-manifest'],
-    #     'test': ['coverage'],
-    # },
-
-    # package_data={
-    #     'sample': ['package_data.dat'],
-    # },
-
-    # data_files=[('my_data', ['data/data_file'])],
 
     entry_points={
         'console_scripts': [

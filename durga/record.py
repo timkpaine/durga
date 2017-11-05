@@ -30,8 +30,6 @@ def create_pair(key, val):
 
 
 def input(meth):
-    # args = inspect.getargspec(meth)
-
     def foo(self, *args, **kwargs):
         pass
     foo.__name__ = meth.__name__
