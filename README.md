@@ -6,7 +6,6 @@
 [![Waffle.io](https://badge.waffle.io/timkpaine/durga.png?label=ready&title=Ready)](https://waffle.io/timkpaine/durga?utm_source=badge)
 [![BCH compliance](https://bettercodehub.com/edge/badge/timkpaine/durga?branch=master)](https://bettercodehub.com/)
 [![Beerpay](https://beerpay.io/timkpaine/durga/badge.svg?style=flat)](https://beerpay.io/timkpaine/durga)
-[![Site](https://img.shields.io/badge/Site--grey.svg?colorB=FFFFFF)](http://paine.nyc/durga)
 
 
 ## Tracker
