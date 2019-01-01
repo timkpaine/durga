@@ -38,6 +38,7 @@ setup(
 
     packages=find_packages(exclude=[]),
     install_requires=requires,
+    extras_require={'dev': requires + ['nose2', 'pylint', 'flake8']},
 
     entry_points={
         'console_scripts': [
