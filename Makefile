@@ -2,10 +2,10 @@ run:  ## clean and make target, run target
 	python3 -m durga 
 
 tests: clean ## Clean and Make unit tests
-	python3 -m pytest durga/tests --cov=durga
+	python3 -m pytest -v durga/tests --cov=durga
 
 test: lint ## run the tests for travis CI
-	@ python3 -m pytest durga/tests --cov=durga
+	@ python3 -m pytest -v durga/tests --cov=durga
 
 lint: ## run linter
 	pylint durga || echo
