@@ -8,7 +8,6 @@ test: lint ## run the tests for travis CI
 	@ python3 -m pytest -v durga/tests --cov=durga
 
 lint: ## run linter
-	pylint durga || echo
 	flake8 durga 
 
 annotate: ## MyPy type annotation check
