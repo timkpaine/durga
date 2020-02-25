@@ -101,3 +101,5 @@ ENV/
 .mypy_cache/
 
 .DS_Store
+docs/api
+docs/index.md

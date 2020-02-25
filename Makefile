@@ -10,11 +10,18 @@ test: lint ## run the tests for travis CI
 lint: ## run linter
 	flake8 durga 
 
+fix:  ## run autopep8/tslint fix
+	autopep8 --in-place -r -a -a durga/
+
 annotate: ## MyPy type annotation check
 	mypy -s durga  
 
 annotate_l: ## MyPy type annotation check - count only
 	mypy -s durga | wc -l 
+
+docs:  ## make documentation
+	make -C ./docs html
+	open ./docs/_build/html/index.html
 
 clean: ## clean the repository
 	find . -name "__pycache__" | xargs  rm -rf 
@@ -41,4 +48,4 @@ help:
 print-%:
 	@echo '$*=$($*)'
 
-.PHONY: clean run test help annotate annotate_l
+.PHONY: clean run test help annotate annotate_l docs
