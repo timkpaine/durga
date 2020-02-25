@@ -49,6 +49,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
 
     keywords='object database',
@@ -56,7 +57,6 @@ setup(
     packages=find_packages(exclude=[]),
     install_requires=requires,
     extras_require={'dev': requires_dev},
-
     entry_points={
         'console_scripts': [
             'peer=durga.peer:main',
