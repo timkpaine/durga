@@ -11,6 +11,7 @@ class TrackerHandler(tornado.web.RequestHandler):
     Extends:
         tornado.web.RequestHandler
     '''
+
     def get(self):
         self.write("trackers")
 
@@ -20,6 +21,7 @@ class TrackerRegisterHandler(tornado.web.RequestHandler):
     Extends:
         tornado.web.RequestHandler
     '''
+
     def initialize(self, peers=None):
         self._peers = peers if peers else {}
 
