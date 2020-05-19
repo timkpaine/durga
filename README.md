@@ -1,10 +1,9 @@
 # durga
-[![Version](https://img.shields.io/badge/version-0.0.1-lightgrey.svg)](https://img.shields.io/badge/version-0.0.1-lightgrey.svg)
-[![Build Status](https://travis-ci.org/timkpaine/durga.svg?branch=master)](https://travis-ci.org/timkpaine/durga)
-[![Coverage](https://codecov.io/gh/timkpaine/durga/branch/master/graph/badge.svg)](https://codecov.io/gh/timkpaine/durga)
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/durga-proj/Lobby)
-[![BCH compliance](https://bettercodehub.com/edge/badge/timkpaine/durga?branch=master)](https://bettercodehub.com/)
-[![Beerpay](https://beerpay.io/timkpaine/durga/badge.svg?style=flat)](https://beerpay.io/timkpaine/durga)
+[![Build Status](https://dev.azure.com/tpaine154/miscellaneous/_apis/build/status/timkpaine.durge?branchName=master)](https://dev.azure.com/tpaine154/miscellaneous/_build/latest?definitionId=32&branchName=master)
+[![Coverage](https://img.shields.io/azure-devops/coverage/tpaine154/miscellaneous/32/master)](https://img.shields.io/azure-devops/coverage/tpaine154/miscellaneous/32)
+[![License](https://img.shields.io/github/license/timkpaine/durga.svg)](https://pypi.python.org/pypi/durga/)
+[![PyPI](https://img.shields.io/pypi/v/durga.svg)](https://pypi.python.org/pypi/durga/)
+[![Docs](https://readthedocs.org/projects/durga/badge/?version=latest)](https://durga.readthedocs.io/en/latest/?badge=latest)
 
 
 ## Tracker
