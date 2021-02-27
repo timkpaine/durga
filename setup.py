@@ -39,7 +39,7 @@ setup(
     long_description=long_description,
     url='https://github.com/timkpaine/durga',
     author='Tim Paine',
-    author_email='timothy.k.paine@gmail.com',
+    author_email='t.paine154@gmail.com',
     license='Apache 2.0',
 
     classifiers=[
