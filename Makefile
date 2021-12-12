@@ -1,11 +1,11 @@
 run:  ## clean and make target, run target
 	python3 -m durga 
 
-tests: clean ## Clean and Make unit tests
-	python3 -m pytest -v durga/tests --cov=durga
+example: ## run simple example
+	python3 durga/example.py
 
-test: lint ## run the tests for travis CI
-	@ python3 -m pytest -v durga/tests --cov=durga
+tests: ## Make unit tests
+	python -m pytest -v durga --cov=durga --junitxml=python_junit.xml --cov-report=xml --cov-branch --reruns 2 --reruns-delay 1
 
 lint: ## run linter
 	python -m flake8 durga setup.py docs/conf.py
@@ -13,26 +13,30 @@ lint: ## run linter
 fix:  ## run black fix
 	python -m black durga/ setup.py docs/conf.py
 
-docs:  ## make documentation
-	make -C ./docs html
-	open ./docs/_build/html/index.html
-
 clean: ## clean the repository
 	find . -name "__pycache__" | xargs  rm -rf 
 	find . -name "*.pyc" | xargs rm -rf 
 	rm -rf .coverage cover htmlcov logs build dist *.egg-info
+	make -C ./docs clean
+	rm -rf ./docs/*.*.rst  # generated
 
-example: ## run simple example
-	python3 durga/example.py
+docs:  ## make documentation
+	make -C ./docs html
+	open ./docs/_build/html/index.html
 
 install:  ## install to site-packages
-	pip3 install .
+	python -m pip install .
 
-dist:  ## dist to pypi
+dev:
+	python -m pip install .[dev]
+
+dist:  ## create dists
 	rm -rf dist build
-	python3 setup.py sdist
-	python3 setup.py bdist_wheel
-	twine check dist/* && twine upload dist/*
+	python setup.py sdist bdist_wheel
+	python -m twine check dist/*
+	
+publish: dist  ## dist to pypi
+	python -m twine upload dist/* --skip-existing
 
 # Thanks to Francoise at marmelab.com for this
 .DEFAULT_GOAL := help
@@ -42,4 +46,4 @@ help:
 print-%:
 	@echo '$*=$($*)'
 
-.PHONY: clean run test help annotate annotate_l docs
+.PHONY: clean test tests help annotate annotate_l docs dist
