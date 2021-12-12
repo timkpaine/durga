@@ -44,6 +44,7 @@ setup(
     version="0.0.1",
     description="Distributed Object Database",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url="https://github.com/timkpaine/durga",
     author="Tim Paine",
     author_email="t.paine154@gmail.com",
