@@ -1,6 +1,7 @@
 # durga
-[![Build Status](https://dev.azure.com/tpaine154/miscellaneous/_apis/build/status/timkpaine.durge?branchName=master)](https://dev.azure.com/tpaine154/miscellaneous/_build/latest?definitionId=32&branchName=master)
-[![Coverage](https://img.shields.io/azure-devops/coverage/tpaine154/miscellaneous/32/master)](https://img.shields.io/azure-devops/coverage/tpaine154/miscellaneous/32)
+
+[![Build Status](https://github.com/timkpaine/durga/workflows/Build%20Status/badge.svg?branch=main)](https://github.com/timkpaine/durga/actions?query=workflow%3A%22Build+Status%22)
+[![codecov](https://codecov.io/gh/timkpaine/durga/branch/main/graph/badge.svg)](https://codecov.io/gh/timkpaine/durga)
 [![License](https://img.shields.io/github/license/timkpaine/durga.svg)](https://pypi.python.org/pypi/durga/)
 [![PyPI](https://img.shields.io/pypi/v/durga.svg)](https://pypi.python.org/pypi/durga/)
 [![Docs](https://readthedocs.org/projects/durga/badge/?version=latest)](https://durga.readthedocs.io/en/latest/?badge=latest)
