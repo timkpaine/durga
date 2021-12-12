@@ -8,16 +8,10 @@ test: lint ## run the tests for travis CI
 	@ python3 -m pytest -v durga/tests --cov=durga
 
 lint: ## run linter
-	flake8 durga 
+	python -m flake8 durga setup.py docs/conf.py
 
-fix:  ## run autopep8/tslint fix
-	autopep8 --in-place -r -a -a durga/
-
-annotate: ## MyPy type annotation check
-	mypy -s durga  
-
-annotate_l: ## MyPy type annotation check - count only
-	mypy -s durga | wc -l 
+fix:  ## run black fix
+	python -m black durga/ setup.py docs/conf.py
 
 docs:  ## make documentation
 	make -C ./docs html

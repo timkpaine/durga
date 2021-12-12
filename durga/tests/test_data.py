@@ -1,4 +1,6 @@
 # for Coverage
+from durga import *
+
 
 class Test:
     def setup(self):
@@ -18,3 +20,6 @@ class Test:
     def teardown_class(cls):
         pass
         # teardown_class() after any methods in this class
+
+    def test_nothing(self):
+        ...

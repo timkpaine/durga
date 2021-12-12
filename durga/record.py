@@ -1,4 +1,3 @@
-
 class Record(object):
     _ins = []
 
@@ -7,7 +6,7 @@ class Record(object):
             setattr(self, k, create_pair(k, v))
 
     def __json__(self):
-        return ''
+        return ""
 
     def __hash__(self):
         pass
@@ -20,16 +19,18 @@ def create_pair(key, val):
     def get(self):
         if self._updated:
             pass
-        return getattr(self, '__' + str(key))
+        return getattr(self, "__" + str(key))
 
     def set(self, val):
-        setattr(self, '__' + str(key), val)
+        setattr(self, "__" + str(key), val)
+
     return property(get, set)
 
 
 def input(meth):
     def foo(self, *args, **kwargs):
         pass
+
     foo.__name__ = meth.__name__
     return foo
 
@@ -37,6 +38,7 @@ def input(meth):
 def output(meth):
     def foo(self, *args, **kwargs):
         pass
+
     foo.__name__ = meth.__name__
     return foo
 
@@ -44,5 +46,6 @@ def output(meth):
 def inout(meth):
     def foo(self, *args, **kwargs):
         pass
+
     foo.__name__ = meth.__name__
     return foo
