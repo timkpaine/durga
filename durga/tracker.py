@@ -7,20 +7,20 @@ from .utils import parseArgs, _gen_random
 
 
 class TrackerHandler(tornado.web.RequestHandler):
-    '''Tracker Handler
+    """Tracker Handler
     Extends:
         tornado.web.RequestHandler
-    '''
+    """
 
     def get(self):
         self.write("trackers")
 
 
 class TrackerRegisterHandler(tornado.web.RequestHandler):
-    '''Handler for registering new peers
+    """Handler for registering new peers
     Extends:
         tornado.web.RequestHandler
-    '''
+    """
 
     def initialize(self, peers=None):
         self._peers = peers if peers else {}
@@ -43,16 +43,18 @@ class TrackerApplication(tornado.web.Application):
     def __init__(self, trackers=None, peers=None, *args, **kwargs):
         self._trackers = trackers if trackers else []
         self._peers = peers if peers else {}
-        super(TrackerApplication, self).__init__([
-            (r"/", TrackerHandler),
-            (r"/register", TrackerRegisterHandler, {'peers': self._peers}),
-        ])
+        super(TrackerApplication, self).__init__(
+            [
+                (r"/", TrackerHandler),
+                (r"/register", TrackerRegisterHandler, {"peers": self._peers}),
+            ]
+        )
 
 
 def main(*args, **kwargs):
-    port = kwargs.get('port', 8889)
+    port = kwargs.get("port", 8889)
     application = TrackerApplication()
-    log.info('Tracker listening on port: %s', port)
+    log.info("Tracker listening on port: %s", port)
     application.listen(port)
     tornado.ioloop.IOLoop.current().start()
 
