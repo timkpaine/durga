@@ -4,7 +4,6 @@
 [![codecov](https://codecov.io/gh/timkpaine/durga/branch/main/graph/badge.svg)](https://codecov.io/gh/timkpaine/durga)
 [![License](https://img.shields.io/github/license/timkpaine/durga.svg)](https://pypi.python.org/pypi/durga/)
 [![PyPI](https://img.shields.io/pypi/v/durga.svg)](https://pypi.python.org/pypi/durga/)
-[![Docs](https://readthedocs.org/projects/durga/badge/?version=latest)](https://durga.readthedocs.io/en/latest/?badge=latest)
 
 
 ## Tracker
