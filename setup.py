@@ -25,7 +25,7 @@ with open(pjoin(here, "README.md"), encoding="utf-8") as f:
 requires = []
 
 requires_dev = [
-    "black>=20.",
+    "black>=20",
     "bump2version>=1.0.0",
     "flake8>=3.7.8",
     "flake8-black>=0.2.1",
