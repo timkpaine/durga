@@ -11,6 +11,10 @@ concurrency:
    group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
    cancel-in-progress: true
 
+permissions:
+  checks: write
+  pull-requests: write
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
@@ -50,7 +54,7 @@ jobs:
         make dist
 
     - name: Upload test results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: pytest-results-${{ matrix.os }}-${{ matrix.python-version }}
         path: python_junit.xml
